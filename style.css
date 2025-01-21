@@ -83,5 +83,16 @@ Les composants
 
 /* ----------------------------------------  la section hero */
 .hero {
+  min-height: 100vh;
   background-image: url("images/maldives.jpg");
+}
+.hero__sociaux {
+  display: flex;
+  gap: 1rem;
+}
+
+.global {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 5vw;
 }/*# sourceMappingURL=style.css.map */
