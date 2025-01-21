@@ -1,0 +1,10 @@
+.entete{
+    display : flex;
+    justify-content: space-between;
+    &__logo {
+        flex: 0 1 150px;
+    }
+    &__navigation {
+        display: inline-block;
+    }
+}
