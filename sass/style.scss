@@ -21,6 +21,7 @@ Les variables
 //////////////////////////////////// */
 
 @import "variables/couleurs";
+@import "variables/dimension";
 
 /*  ////////////////////////////////
 Les bases
@@ -30,10 +31,16 @@ Les bases
 @import "base/liens";
 
 /*  ////////////////////////////////
+Le layout
+//////////////////////////////////// */
+@import "layout/general";
+@import "layout/entete";
+@import "layout/hero";
+
+
+/*  ////////////////////////////////
 Les composants
 //////////////////////////////////// */
 
-@import "composants/entete";
 @import "composants/recherche";
-@import "composants/hero";
-@import "composants/layout";
+@import "composants/menu";
