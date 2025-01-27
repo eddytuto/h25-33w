@@ -1,0 +1,15 @@
+.menu{ // ul
+    display : flex;
+    flex-direction: row;
+    list-style-type: none;
+    &__item{ //li
+        &__a{ //a
+            padding : 3px;
+            background-color: rgba(0,0,0,0.01);
+            &:hover{
+                background-color: rgba(0,0,0,0.05);
+            }
+        }
+
+    }
+}

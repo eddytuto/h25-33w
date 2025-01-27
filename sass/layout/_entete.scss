@@ -1,10 +1,13 @@
 .entete{
     display : flex;
     justify-content: space-between;
+    align-items: center;
     &__logo {
         flex: 0 1 150px;
     }
     &__navigation {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
