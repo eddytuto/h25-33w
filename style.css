@@ -25,7 +25,7 @@ Les bases
 /* -----------------------------------------------  Les balises de base */
 body {
   font-size: 16px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 h1 {
@@ -58,15 +58,13 @@ p {
 
 a {
   text-decoration: none;
-  color: #1cac1c;
+  color: rgb(28, 172, 28);
 }
-
 a:hover {
-  color: #0b610b;
+  color: rgb(11, 97, 11);
 }
-
 a:visited {
-  color: #6ae26a;
+  color: rgb(106, 226, 106);
 }
 
 /*  ////////////////////////////////
@@ -78,20 +76,38 @@ Le layout
   padding: 0 5vw;
 }
 
+.entete__burger {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.chk-burger {
+  display: none;
+}
+
+.chk-burger:checked ~ .entete__navigation {
+  display: flex;
+}
+
 .entete {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .entete__logo {
   flex: 0 1 150px;
 }
-
 .entete__navigation {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media screen and (max-width: 700px) {
+  .entete__navigation {
+    display: none;
+    flex-direction: column;
+  }
 }
 
 /* ----------------------------------------  la section hero */
@@ -99,7 +115,6 @@ Le layout
   min-height: 100vh;
   background-image: url("images/maldives.jpg");
 }
-
 .hero__sociaux {
   display: flex;
   gap: 1rem;
@@ -115,23 +130,19 @@ Les composants
   width: 13rem;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .recherche__input {
   border: none;
   outline: none;
   padding: 2px;
   background-color: rgba(0, 0, 0, 0.01);
 }
-
 .recherche__input:hover {
   background-color: rgba(0, 0, 0, 0.08);
 }
-
 .recherche__input::placeholder {
   color: #555;
   font-style: italic;
 }
-
 .recherche__img {
   flex: 0 0 15px;
   padding: 2px;
@@ -142,13 +153,16 @@ Les composants
   flex-direction: row;
   list-style-type: none;
 }
-
+@media screen and (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+    gap: 8px 0;
+  }
+}
 .menu__item__a {
   padding: 3px;
   background-color: rgba(0, 0, 0, 0.01);
 }
-
 .menu__item__a:hover {
   background-color: rgba(0, 0, 0, 0.05);
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
