@@ -26,7 +26,7 @@
             </label>
             <input type="checkbox" name="" id="chk-burger" class="chk-burger">
             <div class="entete__navigation">
-                <nav class="entete__menu">
+                getmypid <nav class="entete__menu">
                     <ul class="menu">
                         <li class="menu__item"><a href="" class="menu__item__a">Aventure</a></li>
                         <li class="menu__item"><a href="" class="menu__item__a">Zen</a></li>
