@@ -10,4 +10,5 @@
             <p class="footer__heure">8h00 à 17h00</p>
         </section>
     </div>
+    <?php wp_footer(); ?>
 </footer>
