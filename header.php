@@ -26,6 +26,18 @@
             </label>
             <input type="checkbox" name="" id="chk-burger" class="chk-burger">
             <div class="entete__navigation">
+
+                <?php wp_nav_menu(
+                    array(
+                        'menu' => 'principal',
+                        'container' => 'nav',
+                        'container_class' => '',
+                        'container_id' => '',
+                        'container_aria_label' => '',
+                        'menu_class' => 'menu'
+                    )
+                );
+                ?>
                 <nav class="entete__menu">
                     <ul class="menu">
                         <li class="menu__item"><a href="" class="menu__item__a">Aventure</a></li>
