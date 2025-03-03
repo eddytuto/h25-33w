@@ -1,14 +1,28 @@
 <footer>
-    <div class="global">
-        <section class="footer__contact">
-            <h2 class="footer__titre">Contact</h2>
-            <p class="footer__courriel">
+    <div class="piedpage global">
+        <section class="piedpage__s1">
+            <div class="piedpage__s1__externe">
+                <?php wp_nav_menu(array(
+                    "menu" => "externe",
+                    "container" => "nav",
+                )); ?>
+            </div>
+            <div class="piedpage__s1__adresse">
+                <div class="piedpage__s1__adresse__coord">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere porro veniam vitae, tempore corporis omnis nam 
+                </div>
+                <div class="piedpage__s1__adresse__recherche">
+                    <?php get_search_form();   ?>
+                </div>
+            </div>
+            <div class="piedpage__s1__description">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vero explicabo iure sit enim, ea ducimus nesciunt inventore impedit blanditiis unde omnis facere, deleniti eligendi fuga molestias dolor eveniet laborum!
+            </div>
         </section>
-        <section class="footer__horaire">
-            <h2 class="footer__titre">Horaire</h2>
-            <p class="footer__jour">Lundi au vendredi</p>
-            <p class="footer__heure">8h00 à 17h00</p>
-        </section>
+        <section class="piedpage__s2"></section>
+        <section class="piedpage__s3"></section>
+
+
     </div>
-    <?php wp_footer(); ?>
 </footer>
+<?php wp_footer() ?>

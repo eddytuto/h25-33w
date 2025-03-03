@@ -26,9 +26,6 @@
             </label>
             <input type="checkbox" name="" id="chk-burger" class="chk-burger">
             <div class="entete__navigation">
-<<<<<<< HEAD
-                getmypid <nav class="entete__menu">
-=======
 
                 <?php wp_nav_menu(
                     array(
@@ -41,20 +38,7 @@
                     )
                 );
                 ?>
-                <nav class="entete__menu">
->>>>>>> etape-2
-                    <ul class="menu">
-                        <li class="menu__item"><a href="" class="menu__item__a">Aventure</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Zen</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Culturel</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Sport</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Accueil</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Aventure</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Zen</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Culturel</a></li>
-                        <li class="menu__item"><a href="" class="menu__item__a">Sport</a></li>
-                    </ul>
-                </nav>
+
                 <form class="recherche">
                     <input type="text" placeholder="Rechercher" class="recherche__input">
                     <img class="recherche__img" src="https://s2.svgbox.net/hero-outline.svg?ic=search&color=000" width="16" height="16">
