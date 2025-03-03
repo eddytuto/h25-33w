@@ -15,11 +15,11 @@
     <header>
         <div class="entete">
             <figure class="entete__logo">
-                <a href="<?php echo home_url(); ?>">
-                    <img
-                        src="<?php echo get_template_directory_uri() . '/images/logo_tuto.png' ?>"
-                        alt="logo">
-                </a>
+                <?php
+                if (function_exists('the_custom_logo')) {
+                    the_custom_logo();
+                }
+                ?>
             </figure>
             <label for="chk-burger" class="entete__burger">
                 <img
@@ -33,10 +33,6 @@
                     array(
                         'menu' => 'principal',
                         'container' => 'nav',
-                        'container_class' => '',
-                        'container_id' => '',
-                        'container_aria_label' => '',
-                        'menu_class' => 'menu'
                     )
                 );
                 ?>
