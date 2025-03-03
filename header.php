@@ -15,9 +15,11 @@
     <header>
         <div class="entete">
             <figure class="entete__logo">
-                <img
-                    src="<?php echo get_template_directory_uri() . '/images/logo_tuto.png' ?>"
-                    alt="logo">
+                <a href="<?php echo home_url(); ?>">
+                    <img
+                        src="<?php echo get_template_directory_uri() . '/images/logo_tuto.png' ?>"
+                        alt="logo">
+                </a>
             </figure>
             <label for="chk-burger" class="entete__burger">
                 <img
