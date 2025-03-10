@@ -1,5 +1,50 @@
 <?php
 
+function theme_tp_customize_register($wp_customize)
+{ // Le code pour ajouter des sections, des réglages et des contrôles ira ici.
+    // ajout d'une section dans le customizer
+    $wp_customize->add_section('hero_section', array(
+        'title' => __('Section Hero', 'theme_tp'),
+        'priority' => 30,
+    ));
+
+    $wp_customize->add_setting('hero_auteur', array(
+        'default' => __('Eddy Martin', 'theme_tp'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+    // Ajout de l'auteur dans la section hero
+    $wp_customize->add_control('hero_auteur', array(
+        'label' => __('Auteur', 'theme_tp'),
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+    // Ajout du téléphone dans la section hero
+    $wp_customize->add_setting('hero_telephone', array(
+        'default' => __('999-999-9999', 'theme_tp'),
+        'sanitize_callback' => 'sanitize_text_field'
+    ));
+
+    $wp_customize->add_control('hero_telephone', array(
+        'label' => __('Telephone', 'theme_tp'),
+        'section' => 'hero_section',
+        'type' => 'text',
+    ));
+
+    $wp_customize->add_setting('hero_background', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero_background', array(
+        'label' => __('Hero Background Image', 'theme_tp'),
+        'section' => 'hero_section',
+    )));
+}
+
+add_action('customize_register', 'theme_tp_customize_register');
+
+////////////////////////////////////////////////
+
 function mon_theme_supports()
 {
     add_theme_support('title-tag');
