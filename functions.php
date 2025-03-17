@@ -39,6 +39,16 @@ function theme_tp_customize_register($wp_customize)
         'label' => __('Hero Background Image', 'theme_tp'),
         'section' => 'hero_section',
     )));
+    ////////////////////////////////////////////////////////////// couleur du texte
+    $wp_customize->add_setting('hero_couleur', array(
+        'default' => '',
+        'sanitize_callback' => 'esc_url_raw',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'hero_couleur', array(
+        'label' => __('Couleur du texte', 'theme_tp'),
+        'section' => 'hero_section',
+    )));
 }
 
 add_action('customize_register', 'theme_tp_customize_register');
