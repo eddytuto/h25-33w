@@ -39,6 +39,11 @@ $hero_background = get_theme_mod('hero_background', 'Default Title');
 </section>
 <section class="destination">
     <div class="global">
+        <div class="destination__bouton">
+            <button data-categorie="2">Aventure</button>
+            <button data-categorie="8">Croisiere</button>
+            <button data-categorie="2">Culturel</button>
+        </div>
         <h2>Articles de la catégorie</h2>
         <div class="destination__list">
 
