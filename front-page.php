@@ -37,6 +37,14 @@ $hero_background = get_theme_mod('hero_background', 'Default Title');
         endif; ?>
     </div>
 </section>
+<section class="destination">
+    <div class="global">
+        <h2>Articles de la catégorie</h2>
+        <div class="destination__list">
+
+        </div>
+    </div>
+</section>
 <?php get_footer(); ?>
 </body>
 

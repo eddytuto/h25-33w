@@ -74,12 +74,20 @@ add_action('after_setup_theme', 'mon_theme_supports');
 
 function theme_tp_enqueue_styles()
 {
-    wp_enqueue_style('normalize', get_template_directory_uri() . '/css/normalize.css');
+    wp_enqueue_style('normalize', get_template_directory_uri() . '/normalize.css');
     wp_enqueue_style(
         'main-styles',
         get_template_directory_uri() . '/style.css',
         array(),
         filemtime(get_template_directory() . '/style.css')
+    );
+
+    wp_enqueue_script(
+        'destination_restapi',
+        get_template_directory_uri() . '/js/destination.js',
+        array(),
+        filemtime(get_template_directory() . '/js/destination.js'),
+        true
     );
 }
 add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles');
