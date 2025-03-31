@@ -113,7 +113,6 @@ Le layout
 /* ----------------------------------------  la section hero */
 .hero {
   min-height: 100vh;
-  background-image: url("images/maldives.jpg");
 }
 .hero__sociaux {
   display: flex;
@@ -203,4 +202,19 @@ Les composants
 }
 .carte__bouton:hover {
   background-color: #0056b3;
+}
+
+.categorie__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.categorie__ul__li {
+  padding: 3px 4px;
+  cursor: pointer;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

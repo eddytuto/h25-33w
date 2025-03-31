@@ -1,4 +1,6 @@
 <?php
+$functions_dir = get_template_directory() . '/functions/';
+include_once $functions_dir . "generateur.php";
 
 function theme_tp_customize_register($wp_customize)
 { // Le code pour ajouter des sections, des réglages et des contrôles ira ici.

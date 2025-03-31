@@ -40,14 +40,10 @@ $hero_background = get_theme_mod('hero_background', 'Default Title');
 <section class="destination">
     <div class="global">
         <div class="destination__bouton">
-            <button data-categorie="2">Aventure</button>
-            <button data-categorie="8">Croisiere</button>
-            <button data-categorie="2">Culturel</button>
+            <?php categories_liste("destination"); ?>
         </div>
-        <h2>Articles de la catégorie</h2>
-        <div class="destination__list">
 
-        </div>
+        <div class="destination__list"></div>
     </div>
 </section>
 <?php get_footer(); ?>
